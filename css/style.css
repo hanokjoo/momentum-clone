@@ -1,3 +1,133 @@
+html {
+    height: 100%;
+}
+
+body {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+span#clock {
+    font-size: 160px;
+    color: white;
+    margin-top: 20%;
+}
+
+form#login-form input {
+    font-size: 40px;
+    border-bottom: 2px solid transparent;
+}
+form#login-form input::placeholder {
+    color: white;
+}
+form#login-form input:focus {
+    outline: none;
+    border-bottom: 2px solid white;
+    /* box-shadow-bottom: 0px 2px 0px black; */
+}
+/* form#login-form input:focus::placeholder {
+    color: transparent;
+    text-shadow: none;
+} */
+form#login-form button {
+    font-size: 20px;
+    color: white;
+    background: none;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 0px 10px;
+}
+form#login-form button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+}
+
+.div-center {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
 .hidden {
     display: none;
+}
+.font-shadow__black {
+    text-shadow: 2px 2px 5px black;
+}
+.form-center {
+    display: flex;
+    justify-items: center;
+}
+.input-no-border {
+    border: none;
+    background: transparent;
+    color: white;
+    text-align: center;
+}
+/* 이렇게는 적용 안됨 */
+/* .focus-hide-placeholder:focus::placeholder {
+    color: red;
+} */
+
+h1#greeting {
+    color: white;
+    text-align: center;
+    margin: 0px 0px;
+}
+
+form#todo-form {
+    margin-top: 60px;
+    width: 60%;
+}
+form#todo-form input {
+    font-size: 20px;
+    width: 100%;
+    border-bottom: 2px solid transparent;
+}
+form#todo-form input::placeholder {
+    color: white;
+}
+form#todo-form input:focus {
+    outline: none;
+    border-bottom: 2px solid white;
+}
+
+ul#todo-list {
+    list-style: none;
+    color: white;
+    align-self: center;
+    padding: 0px 0px;
+    font-size: 20px;
+}
+ul#todo-list button {
+    margin-right: 5px;
+    color: white;
+    border: none;
+    font-size: large;
+    background-color: transparent;
+}
+ul#todo-list button:hover {
+    cursor: pointer;
+}
+ul#todo-list button i {
+    color: red;
+}
+
+div#quote {
+    color: white;
+    font-size: 15px;
+    position: fixed;
+    bottom: 20px;
+    align-items: center;
+}
+div#quote span:first-child {
+    margin-right: 5px;
+}
+
+div#weather {
+    color: white;
+    font-size: 15px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
 }

@@ -1,6 +1,6 @@
 const quotes = [
     {
-        quote: "I never dreamed about success, I worked for it",
+        quote: "I never dreamed about success, I worked for it.",
         author: "Estee Lauder",
     },
     {
@@ -8,31 +8,31 @@ const quotes = [
         author: "Paul Rand",
     },
     {
-        quote: "Do not be afraid to give up the good to go for the great",
+        quote: "Do not be afraid to give up the good to go for the great.",
         author: "John D. Rockefeller",
     },
     {
-        quote: "If you cannot fly then run. If you cannot run, then walk. And if you cannot walk, then crawl, but whatever you do, you have to keep moving forward.",
-        author: "Martin Luther King Jr.",
+        quote: "The way to get started is to quit talking and begin doing.",
+        author: "Walt Disney",
     },
     {
-        quote: "Our greatest weakness lies in giving up. The most certain way to succeed is always to try just one more time.",
-        author: "Thomas Edison",
+        quote: "Life is what happens when you're busy making other plans.",
+        author: "John Lennon",
     },
     {
-        quote: "The fastest way to change yourself is to hang out with people who are already the way you want to be",
-        author: "REid Hoffman",
+        quote: "When you reach the end of your rope, tie a knot in it and hang on.",
+        author: "Franklin D. Roosevelt",
     },
     {
-        quote: "Money is like gasoline during a road trip. You do not want to run out of gas on your trip, but you are not doing a tour of gas stations",
-        author: "Tim O Reilly",
+        quote: "The future belongs to those who believe in the beauty of their dreams.",
+        author: "Eleanor Roosevelt",
     },
     {
-        quote: "Some people dream of success, while other people get up every morning and make it happen",
+        quote: "Some people dream of success, while other people get up every morning and make it happen.",
         author: "Wayne Huizenga",
     },
     {
-        quote: "The only thing worse than starting something and falling.. is not starting something",
+        quote: "The only thing worse than starting something and falling.. is not starting something.",
         author: "SEth Godin",
     },
     {
@@ -47,4 +47,4 @@ const author = document.querySelector("#quote span:last-child");
 const todayQuote = quotes[Math.floor(Math.random() * quotes.length)];
 
 quote.innerText = todayQuote.quote;
-author.innerText = todayQuote.author;
+author.innerText = `-${todayQuote.author}`;
